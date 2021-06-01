@@ -20,7 +20,7 @@ Accessing the SMBus is a potentially dangerous operation, so exercise caution.
 %autosetup -p1 -n %{name}-release_%{version}
 
 %build
-%qmake5
+%qmake_qt5
 %make_build
 
 %install
