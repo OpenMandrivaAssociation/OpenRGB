@@ -15,6 +15,8 @@ BuildRequires:  stdc++-devel
 BuildRequires:  stdc++-static-devel
 BuildRequires:  desktop-file-utils
 
+Provides:       openrgb
+
 %description
 The purpose of this tool is to control RGB lights on different peripherals.
 Accessing the SMBus is a potentially dangerous operation, so exercise caution.
@@ -31,7 +33,6 @@ install -Dpm0755 openrgb %{buildroot}/%{_bindir}/openrgb
 install -Dpm0644 qt/OpenRGB.png %{buildroot}%{_datadir}/pixmaps/%{name}.png
 install -Dpm0644 60-openrgb.rules %{buildroot}%{_udevrulesdir}/60-openrgb.rules
 install -Dpm0644 qt/%{name}.desktop %{buildroot}%{_datadir}/applications/%{name}.desktop
-
 
 %post
 %udev_rules_update
