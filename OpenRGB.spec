@@ -40,6 +40,6 @@ install -Dpm0644 60-openrgb.rules %{buildroot}%{_udevrulesdir}/60-openrgb.rules
 %license LICENSE
 %doc README.md
 %{_bindir}/openrgb
-%{_datadir}/applications/%{name}.desktop
+#{_datadir}/applications/%{name}.desktop
 %{_datadir}/pixmaps/%{name}.png
 %{_udevrulesdir}/60-openrgb.rules
