@@ -31,7 +31,7 @@ install -Dpm0755 openrgb %{buildroot}/%{_bindir}/openrgb
 install -Dpm0644 qt/OpenRGB.png %{buildroot}%{_datadir}/pixmaps/%{name}.png
 install -Dpm0644 60-openrgb.rules %{buildroot}%{_udevrulesdir}/60-openrgb.rules
 
-desktop-file-install %{_sourcedir}/%{_name}/qt/%{_name}.desktop
+desktop-file-install %{_sourcedir}/openrgb/qt/openrgb.desktop
 
 %post
 %udev_rules_update
