@@ -30,7 +30,7 @@ Accessing the SMBus is a potentially dangerous operation, so exercise caution.
 install -Dpm0755 openrgb %{buildroot}/%{_bindir}/openrgb
 install -Dpm0644 qt/OpenRGB.png %{buildroot}%{_datadir}/pixmaps/%{name}.png
 install -Dpm0644 60-openrgb.rules %{buildroot}%{_udevrulesdir}/60-openrgb.rules
-install -Dpm0644 qt/openrgb.desktop %{buildroot}%{_datadir}/applications/%{name}.desktop
+install -Dpm0644 qt/%{name}.desktop %{buildroot}%{_datadir}/applications/%{name}.desktop
 
 
 %post
