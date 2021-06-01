@@ -13,6 +13,7 @@ BuildRequires:  pkgconfig(gusb)
 BuildRequires:  pkgconfig(hidapi-hidraw)
 BuildRequires:  stdc++-devel
 BuildRequires:  stdc++-static-devel
+BuildRequires:  desktop-file-utils
 
 %description
 The purpose of this tool is to control RGB lights on different peripherals.
