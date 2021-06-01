@@ -11,6 +11,8 @@ BuildRequires:  pkgconfig(Qt5Core)
 BuildRequires:  pkgconfig(Qt5Widgets)
 BuildRequires:  pkgconfig(gusb)
 BuildRequires:  pkgconfig(hidapi-hidraw)
+BuildRequires:  stdc++-devel
+BuildRequires:  stdc++-static-devel
 
 %description
 The purpose of this tool is to control RGB lights on different peripherals.
