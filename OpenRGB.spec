@@ -4,7 +4,7 @@ Release:        1
 Summary:        Open source RGB lighting control that doesn't depend on manufacturer software.
 License:        GPLv2
 URL:            https://gitlab.com/CalcProgrammer1/OpenRGB
-Source0:        https://gitlab.com/CalcProgrammer1/OpenRGB/-/archive/release_%{version}/%{name}-release_%{version}.tar.gz
+Source0:        https://gitlab.com/CalcProgrammer1/OpenRGB/-/archive/release_%{version}/%{name}-release_%{version}.tar.bz2
 
 BuildRequires:  qmake5
 BuildRequires:  pkgconfig(Qt5Core)
