@@ -14,6 +14,7 @@ BuildRequires:  pkgconfig(hidapi-hidraw)
 BuildRequires:  stdc++-devel
 BuildRequires:  stdc++-static-devel
 BuildRequires:  desktop-file-utils
+BuildRequires:  mbedtls-devel
 
 Provides:       openrgb
 
