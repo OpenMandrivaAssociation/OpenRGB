@@ -1,6 +1,6 @@
 Name:           OpenRGB
-Version:        0.6
-Release:        2
+Version:        0.8
+Release:        1
 Summary:        Open source RGB lighting control that doesn't depend on manufacturer software.
 License:        GPLv2
 URL:            https://gitlab.com/CalcProgrammer1/OpenRGB
