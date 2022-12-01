@@ -7,6 +7,7 @@ URL:            https://gitlab.com/CalcProgrammer1/OpenRGB
 Source0:        https://gitlab.com/CalcProgrammer1/OpenRGB/-/archive/release_%{version}/%{name}-release_%{version}.tar.bz2
 
 BuildRequires:  qmake5
+BuildRequires:  cmake(Qt5LinguistTools)
 BuildRequires:  pkgconfig(Qt5Core)
 BuildRequires:  pkgconfig(Qt5Widgets)
 BuildRequires:  pkgconfig(gusb)
