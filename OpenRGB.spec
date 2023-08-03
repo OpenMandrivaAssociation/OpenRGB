@@ -28,6 +28,8 @@ Accessing the SMBus is a potentially dangerous operation, so exercise caution.
 %autosetup -p1 -n %{name}-release_%{version}
 
 %build
+export CC=gcc
+export CXX=g++
 qmake-qt6
 %make_build
 
