@@ -1,15 +1,16 @@
 Name:           OpenRGB
-Version:        0.8
-Release:        2
+Version:        0.9
+Release:        1
 Summary:        Open source RGB lighting control that doesn't depend on manufacturer software.
 License:        GPLv2
 URL:            https://gitlab.com/CalcProgrammer1/OpenRGB
 Source0:        https://gitlab.com/CalcProgrammer1/OpenRGB/-/archive/release_%{version}/%{name}-release_%{version}.tar.bz2
 
-BuildRequires:  qmake5
-BuildRequires:  cmake(Qt5LinguistTools)
-BuildRequires:  pkgconfig(Qt5Core)
-BuildRequires:  pkgconfig(Qt5Widgets)
+BuildRequires:  qmake-qt6
+BuildRequires:  cmake(Qt6Linguist)
+BuildRequires:  cmake(Qt6Core)
+BuildRequires:  cmake(Qt6Gui)
+BuildRequires:  cmake(Qt6Widgets)
 BuildRequires:  pkgconfig(gusb)
 BuildRequires:  pkgconfig(hidapi-hidraw)
 BuildRequires:  stdc++-devel
@@ -27,7 +28,7 @@ Accessing the SMBus is a potentially dangerous operation, so exercise caution.
 %autosetup -p1 -n %{name}-release_%{version}
 
 %build
-%qmake_qt5
+qmake-qt6
 %make_build
 
 ./scripts/build-udev-rules.sh $(pwd)
