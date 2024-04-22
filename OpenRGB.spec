@@ -1,6 +1,9 @@
+# Workaround for a build failure with clang 18.1.4
+%define _disable_lto 1
+
 Name:           OpenRGB
-Version:        0.8
-Release:        2
+Version:        0.9
+Release:        1
 Summary:        Open source RGB lighting control that doesn't depend on manufacturer software.
 License:        GPLv2
 URL:            https://gitlab.com/CalcProgrammer1/OpenRGB
