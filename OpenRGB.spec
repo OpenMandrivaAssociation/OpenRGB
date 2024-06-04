@@ -1,5 +1,4 @@
-# Workaround for a build failure with clang 18.1.4
-%define _disable_lto 1
+%undefine _debugsource_packages
 
 Name:           OpenRGB
 Version:        0.9
@@ -8,11 +7,12 @@ Summary:        Open source RGB lighting control that doesn't depend on manufact
 License:        GPLv2
 URL:            https://gitlab.com/CalcProgrammer1/OpenRGB
 Source0:        https://gitlab.com/CalcProgrammer1/OpenRGB/-/archive/release_%{version}/%{name}-release_%{version}.tar.bz2
+Patch:		openrgb-0.9-qt6.patch
 
-BuildRequires:  qmake5
-BuildRequires:  cmake(Qt5LinguistTools)
-BuildRequires:  pkgconfig(Qt5Core)
-BuildRequires:  pkgconfig(Qt5Widgets)
+BuildRequires:  qmake-qt6
+BuildRequires:  cmake(Qt6LinguistTools)
+BuildRequires:  pkgconfig(Qt6Core)
+BuildRequires:  pkgconfig(Qt6Widgets)
 BuildRequires:  pkgconfig(gusb)
 BuildRequires:  pkgconfig(hidapi-hidraw)
 BuildRequires:  stdc++-devel
@@ -29,8 +29,10 @@ Accessing the SMBus is a potentially dangerous operation, so exercise caution.
 %prep
 %autosetup -p1 -n %{name}-release_%{version}
 
+%conf
+%{_qtdir}/bin/qmake OpenRGB.pro
+
 %build
-%qmake_qt5
 %make_build
 
 ./scripts/build-udev-rules.sh $(pwd)

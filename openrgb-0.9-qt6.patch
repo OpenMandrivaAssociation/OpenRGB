@@ -1,0 +1,10 @@
+diff -up OpenRGB-release_0.9/qt/OpenRGBFont.cpp.omv~ OpenRGB-release_0.9/qt/OpenRGBFont.cpp
+--- OpenRGB-release_0.9/qt/OpenRGBFont.cpp.omv~	2024-06-04 04:36:50.256789061 +0200
++++ OpenRGB-release_0.9/qt/OpenRGBFont.cpp	2024-06-04 04:36:56.848858719 +0200
+@@ -1,5 +1,6 @@
+ #include "OpenRGBFont.h"
+ #include <QFontDatabase>
++#include <QList>
+ 
+ OpenRGBFont* OpenRGBFont::instance;
+ 
