@@ -2,7 +2,7 @@
 
 Name:           OpenRGB
 Version:        0.9
-Release:        1
+Release:        2
 Summary:        Open source RGB lighting control that doesn't depend on manufacturer software.
 License:        GPLv2
 URL:            https://gitlab.com/CalcProgrammer1/OpenRGB
@@ -19,6 +19,8 @@ BuildRequires:  stdc++-devel
 BuildRequires:  stdc++-static-devel
 BuildRequires:  desktop-file-utils
 BuildRequires:  mbedtls-devel
+
+Requires: python-smbus
 
 Provides:       openrgb
 
