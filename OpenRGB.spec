@@ -2,7 +2,7 @@
 %define oname openrgb
 
 Name:           OpenRGB
-Version:        1.0
+Version:        1.1
 Release:        1
 Summary:        Open source RGB lighting control that doesn't depend on manufacturer software
 License:        GPL-2.0-only
